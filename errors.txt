@@ -2,9 +2,25 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 15: expected statement.
-    w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/your-infura-project-id"))
-       ^
+File "game/screens.rpy", line 7: 'jump' is not a keyword argument or valid child of the key statement.
+    jump start
+        ^
+
+File "game/screens.rpy", line 15: 'jump' is not a keyword argument or valid child of the textbutton statement.
+    jump start
+        ^
+
+File "game/screens.rpy", line 22: 'player_choice' is not a keyword argument or valid child of the input statement.
+    input player_choice
+                       ^
+
+File "game/screens.rpy", line 40: expected a keyword argument, colon, or end of line.
+    button "Continue":
+           ^
+
+File "game/screens.rpy", line 62: expected statement.
+    start()
+           ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Jun  8 20:11:43 2023
+Thu Jun  8 20:56:28 2023

@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 2, in script
+  File "game/script.rpy", line 6, in script
     init python:
-  File "game/script.rpy", line 4, in <module>
-    import mantledragon
-ModuleNotFoundError: No module named 'mantledragon'
+  File "game/script.rpy", line 8, in <module>
+    from web3 import Web3
+ModuleNotFoundError: No module named 'web3'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 2, in script
+  File "game/script.rpy", line 6, in script
     init python:
   File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 4, in <module>
-    import mantledragon
-ModuleNotFoundError: No module named 'mantledragon'
+  File "game/script.rpy", line 8, in <module>
+    from web3 import Web3
+ModuleNotFoundError: No module named 'web3'
 
 macOS-13.3.1-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
  
-Thu Jun  8 20:10:44 2023
+Thu Jun  8 20:42:23 2023

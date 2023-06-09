@@ -1,0 +1,116 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "player",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "computer",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "enum RockPaperScissors.Move",
+				"name": "playerMove",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"internalType": "enum RockPaperScissors.Move",
+				"name": "computerMove",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "result",
+				"type": "string"
+			}
+		],
+		"name": "GameResult",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "joinGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "enum RockPaperScissors.Move",
+				"name": "playerMove",
+				"type": "uint8"
+			}
+		],
+		"name": "play",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "computer",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "player",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "scoreComputer",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "scorePlayer",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
