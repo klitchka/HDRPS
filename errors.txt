@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1: expected ':' not found.
-    init python
-               ^
+File "game/script.rpy", line 15: expected statement.
+    w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/your-infura-project-id"))
+       ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Jun  8 18:50:39 2023
+Thu Jun  8 20:11:43 2023

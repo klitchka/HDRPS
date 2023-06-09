@@ -1,11 +1,19 @@
 init python:
     import random
+    import web3
+    from web3 import Web3
+    from mantle import Mantle, ContractService, KeystoreService
+
 
 # Define las imágenes que se utilizarán
 image bg sala = "sala.jpg"
 
 # Start of the story
 label start:
+
+# Conexión a la red Ethereum (ajusta la URL del proveedor según tus necesidades)
+w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/your-infura-project-id"))
+
     scene bg sala
 
     "You are BMO, a small game console with a thirst for adventure."

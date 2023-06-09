@@ -1,4 +1,4 @@
-Thu Jun  8 18:50:51 2023
+Thu Jun  8 20:11:43 2023
 macOS-13.3.1-arm64-arm-64bit
 Ren'Py 8.1.1.23060707
  
@@ -7,33 +7,15 @@ Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
 Loader init. took 0.00s
 Loading error handling. took 0.01s
-Loading script. took 0.05s
+Loading script. took 0.04s
 Loading save slot metadata. took 0.00s
 Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.00s
-Index archives took 0.00s
-Backing up script files to '/Users/aaparici/Library/RenPy/backups/HDRENPY':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
+
+File "game/script.rpy", line 15: expected statement.
+    w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/your-infura-project-id"))
+       ^
 DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.02s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.17s
+Interface start. took 0.18s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -45,47 +27,3 @@ Version: b'2.1 Metal - 83.1'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(2560, 1440)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 20, in script
-    "Scores: BMO - [score_player] | Eileen - [score_computer]"
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/character.py", line 1003, in do_display
-    display_say(who,
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/display/core.py", line 4389, in interact_core
-    self.quit_event()
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/display/core.py", line 3192, in quit_event
-    renpy.display.behavior.run(renpy.config.quit_action)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/display/behavior.py", line 375, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_menu.rpy", line 226, in __call__
-    layout.yesno_screen(layout.QUIT, Quit(False))
-  File "renpy/common/00layout.rpy", line 526, in yesno_screen
-    elif renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/game.py", line 291, in invoke_in_new_context
-    return callable(*args, **kwargs)
-  File "renpy/common/00layout.rpy", line 471, in invoke_yesno_prompt
-    rv = layout.yesno_prompt(*args)
-AttributeError: 'Layout' object has no attribute 'yesno_prompt'
-
-While running game code:
-  File "game/script.rpy", line 20, in script
-    "Scores: BMO - [score_player] | Eileen - [score_computer]"
-  File "renpy/common/00action_menu.rpy", line 226, in __call__
-    layout.yesno_screen(layout.QUIT, Quit(False))
-  File "renpy/common/00layout.rpy", line 526, in yesno_screen
-    elif renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
-  File "renpy/common/00layout.rpy", line 471, in invoke_yesno_prompt
-    rv = layout.yesno_prompt(*args)
-AttributeError: 'Layout' object has no attribute 'yesno_prompt'
