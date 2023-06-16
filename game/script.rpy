@@ -1,10 +1,13 @@
+# Importa el archivo con las definiciones de las pantallas
+$ renpy.include("screens.rpy")
+
 init python:
     import random
 
 # Define las imágenes que se utilizarán
 image bg sala = "sala.jpg"
 
-# Start of the story
+# Inicio de la historia
 label start:
     scene bg sala
 

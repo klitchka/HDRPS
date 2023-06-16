@@ -1,52 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 20, in script
-    "Scores: BMO - [score_player] | Eileen - [score_computer]"
-  File "renpy/common/00action_menu.rpy", line 226, in __call__
-    layout.yesno_screen(layout.QUIT, Quit(False))
-  File "renpy/common/00layout.rpy", line 526, in yesno_screen
-    elif renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
-  File "renpy/common/00layout.rpy", line 471, in invoke_yesno_prompt
-    rv = layout.yesno_prompt(*args)
-AttributeError: 'Layout' object has no attribute 'yesno_prompt'
+  File "game/script.rpy", line 6, in script
+    init python:
+  File "game/script.rpy", line 8, in <module>
+    from web3 import Web3
+ModuleNotFoundError: No module named 'web3'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 20, in script
-    "Scores: BMO - [score_player] | Eileen - [score_computer]"
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/character.py", line 1003, in do_display
-    display_say(who,
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/display/core.py", line 4389, in interact_core
-    self.quit_event()
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/display/core.py", line 3192, in quit_event
-    renpy.display.behavior.run(renpy.config.quit_action)
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/display/behavior.py", line 375, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_menu.rpy", line 226, in __call__
-    layout.yesno_screen(layout.QUIT, Quit(False))
-  File "renpy/common/00layout.rpy", line 526, in yesno_screen
-    elif renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
-  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/game.py", line 291, in invoke_in_new_context
-    return callable(*args, **kwargs)
-  File "renpy/common/00layout.rpy", line 471, in invoke_yesno_prompt
-    rv = layout.yesno_prompt(*args)
-AttributeError: 'Layout' object has no attribute 'yesno_prompt'
+  File "game/script.rpy", line 6, in script
+    init python:
+  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/aaparici/Desktop/renpy-8.1.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 8, in <module>
+    from web3 import Web3
+ModuleNotFoundError: No module named 'web3'
 
 macOS-13.3.1-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
  
-Thu Jun  8 18:51:00 2023
+Thu Jun  8 20:42:23 2023
